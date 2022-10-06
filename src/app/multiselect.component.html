@@ -1,0 +1,7 @@
+<form action="#" class="multiselect-form">
+  <h3>Categories</h3>
+  <input type="text" placeholder="Search..." class="multiselect-form--search" tabindex="0"/>
+  <app-multiselect-list [categories]="categories$ | async" (scrollingFinished)="onScrollingFinished()">
+  </app-multiselect-list>
+  <button class="btn-primary--large">Proceed</button>
+</form>
